@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #bccbdb;
+    background: #b1b5cf;
 }
 
 .container {
@@ -74,8 +74,8 @@ body {
 }
 
 .filter button.active {
-    background: #3e71a8;
-    border-color: #3e71a8;
+    background: #493ea8;
+    border-color: #493ea8;
     color: white;
 }
 
@@ -99,7 +99,7 @@ body {
 .slider input {
     width: 100%;
     height: 5px;
-    accent-color: #3e71a8;
+    accent-color: #493ea8;
 }
 
 .editpanel .rotate {
@@ -149,8 +149,8 @@ body {
 }
 
 .controls button.save-img {
-    background: #3e71a8;
-    border: 2px solid #3e71a8;
+    background: #493ea8;
+    border: 2px solid #493ea8;
     color: white
 }
 
@@ -170,6 +170,7 @@ body {
 @media screen and (max-width: 800px) {
     .container {
         border-radius: 0%;
+        animation: f 0
     }
 
     .container h1 {
