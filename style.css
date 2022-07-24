@@ -45,7 +45,7 @@ body {
     width: 280px;
     border: 1px solid rgb(175, 175, 175);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .editpanel .title {
@@ -187,6 +187,7 @@ body {
     .wrapper .preview {
         width: 100%;
         margin-bottom: 2em;
+        margin-left: 0;
     }
 }
 
