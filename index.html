@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container disable">
         <h1>IMAGE EDITOR</h1>
         <div class="wrapper">
             <div class="editpanel">
@@ -46,10 +46,13 @@
         <div class="controls">
             <button class="reset-filters">Reset</button>
             <div class="row">
+                <input class="file-input" type="file" accept="image/*" hidden>
                 <button class="choose-img">Choose image</button>
                 <button class="save-img">Save image</button>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
