@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #bccbdb;
+}
+
+.container {
+    width: 820px;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.container .wrapper {
+    display: flex;
+    margin: 30px 0;
+    min-height: 400px;
+}
+
+.wrapper .editpanel {
+    width: 280px;
+    border: 1px solid rgb(175, 175, 175);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.editpanel .title {
+    display: block;
+    margin-bottom: 0.8em;
+}
+
+.editpanel .options, .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.editpanel button {
+    height: 3em;
+    font-size: 14px;
+    color: rgb(83, 83, 83);
+    margin-bottom: 8px;
+    background: white;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+}
+
+.filter button.active {
+    background: #3e71a8;
+    border-color: #3e71a8;
+    color: white;
+}
+
+.editpanel button:hover {
+    background: whitesmoke;
+}
+
+.editpanel .filter button {
+    width: calc(50% - 4px);
+}
+
+.editpanel .rotate button {
+    width: calc(25% - 6px);
+}
+
+.filter .slider {
+    margin-top: 0.6em;
+}
+
+.slider .filter-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider input {
+    width: 100%;
+    height: 5px;
+    accent-color: #3e71a8;
+}
+
+.editpanel .rotate {
+    margin-top: 0.8em;
+}
+
+.wrapper .preview {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.preview img {
+    max-width: 420px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.controls button {
+    font-size: 14px;
+    padding: 11px 20px;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.controls button.reset-filters {
+    background: white;
+}
+
+.controls button.reset-filters:hover {
+    background: whitesmoke;
+}
+
+.controls button.choose-img {
+    background: rgb(128, 128, 128);
+    border: 2px solid rgb(128, 128, 128);
+    color: white
+}
+
+.controls button.choose-img:hover {
+    background: rgb(116, 116, 116);
+}
+
+.controls button.save-img {
+    background: #3e71a8;
+    border: 2px solid #3e71a8;
+    color: white
+}
+
+.controls button.save-img:hover {
+    background: #356394;
+}
+
+@media screen and (max-width: 750px) {
+    .container .wrapper {
+        flex-wrap: wrap-reverse;
+    }    
+
+    .wrapper .editpanel {
+        width: 100%;
+    }
+
+    .wrapper .preview {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .controls button { 
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .controls .row {
+        width: 100%;
+    }
+}
+
+
+
