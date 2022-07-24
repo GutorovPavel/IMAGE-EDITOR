@@ -88,7 +88,7 @@ body {
 }
 
 .filter .slider {
-    margin-top: 0.6em;
+    margin-top: 6em;
 }
 
 .slider .filter-info {
@@ -155,7 +155,7 @@ body {
 }
 
 .controls button.save-img:hover {
-    background: #356394;
+    background: #3a318f;
 }
 
 @keyframes f{
@@ -183,6 +183,10 @@ body {
 
     .wrapper .editpanel {
         width: 100%;
+    }
+
+    .filter .slider {
+        margin-top: 0.5em;
     }
 
     .wrapper .preview {

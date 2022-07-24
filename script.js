@@ -97,7 +97,7 @@ const saveImage = () => {
     ctx.drawImage(previewImage, 0, 0, canvas.width, canvas.height);
     
     const link = document.createElement("a");
-    link.download = "image.jpg";
+    link.download = "image.png";
     link.href = canvas.toDataURL();
     link.click();
 
